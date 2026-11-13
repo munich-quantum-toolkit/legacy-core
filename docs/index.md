@@ -13,7 +13,7 @@ including {doc}`installation instructions <installation>`, a
 {doc}`decision diagram (DD) package <dd_package>`, as well as detailed
 {doc}`API documentation <api/mqt/core/index>`. The source code of MQT Core is
 publicly available on GitHub at
-[munich-quantum-toolkit/core](https://github.com/munich-quantum-toolkit/core),
+[munich-quantum-toolkit/legacy-core](https://github.com/munich-quantum-toolkit/legacy-core),
 while pre-built binaries are available via
 [PyPI](https://pypi.org/project/mqt.core/) for all major operating systems and
 all modern Python versions. MQT Core is fully compatible with Qiskit 1.0 and
@@ -91,8 +91,8 @@ ecosystem, which is being developed as part of the
 Thank you to all the contributors who have helped make MQT Core a reality!
 
 <p align="center">
-<a href="https://github.com/munich-quantum-toolkit/core/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=munich-quantum-toolkit/core" />
+<a href="https://github.com/munich-quantum-toolkit/legacy-core/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=munich-quantum-toolkit/legacy-core" />
 </a>
 </p>
 

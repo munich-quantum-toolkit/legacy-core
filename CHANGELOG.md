@@ -925,7 +925,7 @@ for previous changelogs._
 
 <!-- Version links -->
 
-[unreleased]: https://github.com/munich-quantum-toolkit/core/compare/v3.12.0...v3.x
+[unreleased]: https://github.com/munich-quantum-toolkit/legacy-core/compare/v3.12.0...main
 [3.12.0]: https://github.com/munich-quantum-toolkit/core/releases/tag/v3.12.0
 [3.11.0]: https://github.com/munich-quantum-toolkit/core/releases/tag/v3.11.0
 [3.10.1]: https://github.com/munich-quantum-toolkit/core/releases/tag/v3.10.1

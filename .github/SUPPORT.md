@@ -18,5 +18,5 @@ You can save time by following this procedure when reporting a problem:
 You can also always reach us at
 [quantum.cda@xcit.tum.de](mailto:quantum.cda@xcit.tum.de).
 
-[Issues]: https://github.com/munich-quantum-toolkit/core/issues
-[Discussions]: https://github.com/munich-quantum-toolkit/core/discussions
+[Issues]: https://github.com/munich-quantum-toolkit/legacy-core/issues
+[Discussions]: https://github.com/munich-quantum-toolkit/legacy-core/discussions

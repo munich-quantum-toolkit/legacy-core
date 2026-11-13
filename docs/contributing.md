@@ -6,11 +6,12 @@
 Thank you for your interest in contributing to MQT Core! This document outlines
 the development guidelines and how to contribute.
 
-We use GitHub to [host code](https://github.com/munich-quantum-toolkit/core), to
+We use GitHub to
+[host code](https://github.com/munich-quantum-toolkit/legacy-core), to
 [track issues and feature requests][issues], as well as accept
-[pull requests](https://github.com/munich-quantum-toolkit/core/pulls). See
-<https://docs.github.com/en/get-started/quickstart> for a general introduction
-to working with GitHub and contributing to projects.
+[pull requests](https://github.com/munich-quantum-toolkit/legacy-core/pulls).
+See <https://docs.github.com/en/get-started/quickstart> for a general
+introduction to working with GitHub and contributing to projects.
 
 ## Types of Contributions
 
@@ -19,8 +20,9 @@ Pick the path that fits your time and interests:
 - 🐛 Report bugs:
 
   Use the _🐛 Bug report_ template at
-  <https://github.com/munich-quantum-toolkit/core/issues>. Include steps to
-  reproduce, expected vs. actual behavior, environment, and a minimal example.
+  <https://github.com/munich-quantum-toolkit/legacy-core/issues>. Include steps
+  to reproduce, expected vs. actual behavior, environment, and a minimal
+  example.
 
 - 🛠️ Fix bugs:
 
@@ -30,7 +32,7 @@ Pick the path that fits your time and interests:
 - 💡 Propose features:
 
   Use the _✨ Feature request_ template at
-  <https://github.com/munich-quantum-toolkit/core/issues>. Describe the
+  <https://github.com/munich-quantum-toolkit/legacy-core/issues>. Describe the
   motivation, alternatives considered, and (optionally) a small API sketch.
 
 - ✨ Implement features:
@@ -56,7 +58,7 @@ Pick the path that fits your time and interests:
 - 🙌 Community support:
 
   Triage issues, reproduce reports, and answer questions in Discussions:
-  <https://github.com/munich-quantum-toolkit/core/discussions>.
+  <https://github.com/munich-quantum-toolkit/legacy-core/discussions>.
 
 ## Guidelines
 
@@ -208,7 +210,7 @@ systems and compilers:
 - {code}`windows-11-arm`: {code}`Release` build using {code}`msvc`
 
 To access the latest build logs, visit the
-[GitHub Actions page](https://github.com/munich-quantum-toolkit/core/actions/workflows/ci.yml).
+[GitHub Actions page](https://github.com/munich-quantum-toolkit/legacy-core/actions/workflows/ci.yml).
 
 We are not aware of any issues with other compilers or operating systems. If you
 encounter any problems, please [open an issue][issues] and let us know.
@@ -306,11 +308,11 @@ If you want to disable configuring and building the C++ tests, you can pass
 :::
 
 Our CI pipeline on GitHub also collects code coverage information and uploads it
-to [Codecov](https://codecov.io/gh/munich-quantum-toolkit/core). Our goal is to
-have new contributions at least maintain the current code coverage level, while
-striving for covering as much of the code as possible. Try to write meaningful
-tests that actually test the correctness of the code and not just exercise the
-code paths.
+to [Codecov](https://codecov.io/gh/munich-quantum-toolkit/legacy-core). Our goal
+is to have new contributions at least maintain the current code coverage level,
+while striving for covering as much of the code as possible. Try to write
+meaningful tests that actually test the correctness of the code and not just
+exercise the code paths.
 
 If you want to enable coverage locally, you can use the `coverage` preset:
 
@@ -697,8 +699,8 @@ respective PR does not influence the type of an upcoming release.
 
 Once everything is in order, you can merge the PR preparing the release.
 Afterward, navigate to the
-[Releases page](https://github.com/munich-quantum-toolkit/core/releases) on
-GitHub, edit the release draft if necessary, and publish the release.
+[Releases page](https://github.com/munich-quantum-toolkit/legacy-core/releases)
+on GitHub, edit the release draft if necessary, and publish the release.
 
 <!--- Links --->
 [clion]: https://www.jetbrains.com/clion/
@@ -707,7 +709,7 @@ GitHub, edit the release draft if necessary, and publish the release.
 [prek]: https://prek.j178.dev
 [ruff]: https://docs.astral.sh/ruff/
 [ty]: https://docs.astral.sh/ty/
-[issues]: https://github.com/munich-quantum-toolkit/core/issues
+[issues]: https://github.com/munich-quantum-toolkit/legacy-core/issues
 [Keep a Changelog]: https://keepachangelog.com/en/1.1.0/
 [Common Changelog]: https://common-changelog.org
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html

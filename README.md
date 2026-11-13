@@ -2,10 +2,10 @@
 ![OS](https://img.shields.io/badge/os-linux%20%7C%20macos%20%7C%20windows-blue?style=flat-square)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![DOI](https://img.shields.io/badge/JOSS-10.21105/joss.07478-blue.svg?style=flat-square)](https://doi.org/10.21105/joss.07478)
-[![CI](https://img.shields.io/github/actions/workflow/status/munich-quantum-toolkit/core/ci.yml?branch=v3.x&style=flat-square&logo=github&label=ci)](https://github.com/munich-quantum-toolkit/core/actions/workflows/ci.yml?query=branch%3Av3.x)
-[![CD](https://img.shields.io/github/actions/workflow/status/munich-quantum-toolkit/core/cd.yml?style=flat-square&logo=github&label=cd)](https://github.com/munich-quantum-toolkit/core/actions/workflows/cd.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/munich-quantum-toolkit/legacy-core/ci.yml?branch=main&style=flat-square&logo=github&label=ci)](https://github.com/munich-quantum-toolkit/legacy-core/actions/workflows/ci.yml?query=branch%3Amain)
+[![CD](https://img.shields.io/github/actions/workflow/status/munich-quantum-toolkit/legacy-core/cd.yml?style=flat-square&logo=github&label=cd)](https://github.com/munich-quantum-toolkit/legacy-core/actions/workflows/cd.yml)
 [![Documentation](https://img.shields.io/readthedocs/mqt-core?logo=readthedocs&style=flat-square)](https://mqt.readthedocs.io/projects/core)
-[![codecov](https://img.shields.io/codecov/c/github/munich-quantum-toolkit/core/v3.x?style=flat-square&logo=codecov)](https://codecov.io/gh/munich-quantum-toolkit/core/branch/v3.x)
+[![codecov](https://img.shields.io/codecov/c/github/munich-quantum-toolkit/legacy-core/main?style=flat-square&logo=codecov)](https://codecov.io/gh/munich-quantum-toolkit/legacy-core/branch/main)
 
 <p align="center">
   <a href="https://mqt.readthedocs.io">
@@ -34,9 +34,9 @@ forms the backbone of the quantum software tools developed as part of the
 - A state-of-the-art decision diagram (DD) package for quantum computing.
 
 If you have any questions, feel free to create a
-[discussion](https://github.com/munich-quantum-toolkit/core/discussions) or an
-[issue](https://github.com/munich-quantum-toolkit/core/issues) on
-[GitHub](https://github.com/munich-quantum-toolkit/core).
+[discussion](https://github.com/munich-quantum-toolkit/legacy-core/discussions)
+or an [issue](https://github.com/munich-quantum-toolkit/legacy-core/issues) on
+[GitHub](https://github.com/munich-quantum-toolkit/legacy-core).
 
 ## Contributors and Supporters
 
@@ -58,8 +58,8 @@ ecosystem, which is being developed as part of the
 Thank you to all the contributors who have helped make MQT Core a reality!
 
 <p align="center">
-  <a href="https://github.com/munich-quantum-toolkit/core/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=munich-quantum-toolkit/core" alt="Contributors to munich-quantum-toolkit/core" />
+  <a href="https://github.com/munich-quantum-toolkit/legacy-core/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=munich-quantum-toolkit/legacy-core" alt="Contributors to munich-quantum-toolkit/legacy-core" />
   </a>
 </p>
 
