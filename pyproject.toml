@@ -100,11 +100,11 @@ qiskit = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/munich-quantum-toolkit/core"
-Changelog = "https://github.com/munich-quantum-toolkit/core/blob/v3.x/CHANGELOG.md"
+Homepage = "https://github.com/munich-quantum-toolkit/legacy-core"
+Changelog = "https://github.com/munich-quantum-toolkit/legacy-core/blob/main/CHANGELOG.md"
 Documentation = "https://mqt.readthedocs.io/projects/core"
-Issues = "https://github.com/munich-quantum-toolkit/core/issues"
-Discussions = "https://github.com/munich-quantum-toolkit/core/discussions"
+Issues = "https://github.com/munich-quantum-toolkit/legacy-core/issues"
+Discussions = "https://github.com/munich-quantum-toolkit/legacy-core/discussions"
 PyPI = "https://pypi.org/project/mqt-core/"
 
 [project.scripts]
