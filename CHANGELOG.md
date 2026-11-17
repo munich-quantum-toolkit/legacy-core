@@ -10,6 +10,10 @@ releases may include breaking changes.
 
 ## [Unreleased]
 
+### Changed
+
+- ⬆️ Require Python 3.11.5 or newer ([#6]) ([**@denialhaag**])
+
 ## [3.12.0] - 2026-11-08
 
 _If you are upgrading: please see [`UPGRADING.md`](UPGRADING.md#3120)._
@@ -955,6 +959,7 @@ for previous changelogs._
 
 <!-- PR links -->
 
+[#6]: https://github.com/munich-quantum-toolkit/legacy-core/pull/6
 [#2969]: https://github.com/munich-quantum-toolkit/core/pull/2969
 [#2952]: https://github.com/munich-quantum-toolkit/core/pull/2952
 [#2942]: https://github.com/munich-quantum-toolkit/core/pull/2942
