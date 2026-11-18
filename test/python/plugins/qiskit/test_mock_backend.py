@@ -460,7 +460,7 @@ def _record_submissions(device: MockQDMIDevice) -> list[tuple[str | bytes, Progr
         submissions.append((program, program_format))
         return device.MockJob(num_clbits=2, shots=num_shots)
 
-    device.submit_job = submit_job  # ty: ignore[invalid-assignment]
+    device.submit_job = submit_job
     return submissions
 
 
@@ -542,7 +542,7 @@ def test_backend_respects_format_preference(mock_qdmi_device_factory: type[MockQ
 
     device = mock_qdmi_device_factory(num_qubits=2, operations=["h", "measure"])
     # The device reports OpenQASM 2 first, but OpenQASM 3 outranks it.
-    device.supported_program_formats = lambda: [ProgramFormat.QASM2, ProgramFormat.QASM3]  # ty: ignore[invalid-assignment]
+    device.supported_program_formats = lambda: [ProgramFormat.QASM2, ProgramFormat.QASM3]
     submissions = _record_submissions(device)
 
     backend = QDMIBackend(device)  # ty: ignore[invalid-argument-type]
@@ -576,7 +576,7 @@ def test_backend_uses_registered_serializer(
 ) -> None:
     """Backend serializes through a registered serializer when the device supports its format."""
     device = mock_qdmi_device_factory(num_qubits=2, operations=["r", "cz", "measure"])
-    device.supported_program_formats = lambda: [registered_serializer, ProgramFormat.QASM3]  # ty: ignore[invalid-assignment]
+    device.supported_program_formats = lambda: [registered_serializer, ProgramFormat.QASM3]
     submissions = _record_submissions(device)
 
     backend = QDMIBackend(device)  # ty: ignore[invalid-argument-type]
@@ -594,7 +594,7 @@ def test_backend_prefers_registered_serializer_over_qasm(
 ) -> None:
     """A registered serializer takes priority over the built-in OpenQASM serializers."""
     device = mock_qdmi_device_factory(num_qubits=2, operations=["r", "cz", "measure"])
-    device.supported_program_formats = lambda: [ProgramFormat.QASM2, ProgramFormat.QASM3, registered_serializer]  # ty: ignore[invalid-assignment]
+    device.supported_program_formats = lambda: [ProgramFormat.QASM2, ProgramFormat.QASM3, registered_serializer]
     submissions = _record_submissions(device)
 
     backend = QDMIBackend(device)  # ty: ignore[invalid-argument-type]
@@ -632,7 +632,7 @@ def test_backend_submits_binary_payload(
     """A binary format reaches the device as the exact bytes the serializer returned."""
     fmt, payload = registered_binary_serializer
     device = mock_qdmi_device_factory(num_qubits=2, operations=["h", "cz", "measure"])
-    device.supported_program_formats = lambda: [fmt, ProgramFormat.QASM3]  # ty: ignore[invalid-assignment]
+    device.supported_program_formats = lambda: [fmt, ProgramFormat.QASM3]
     submissions = _record_submissions(device)
 
     backend = QDMIBackend(device)  # ty: ignore[invalid-argument-type]
