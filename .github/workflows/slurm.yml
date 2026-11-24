@@ -3,7 +3,7 @@ name: Slurm integration
 on:
   push:
     branches:
-      - v3.x
+      - main
     paths:
       - ".github/workflows/slurm.yml"
       - "bindings/qdmi/**"

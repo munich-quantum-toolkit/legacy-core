@@ -4,7 +4,7 @@
 [![DOI](https://img.shields.io/badge/JOSS-10.21105/joss.07478-blue.svg?style=flat-square)](https://doi.org/10.21105/joss.07478)
 [![CI](https://img.shields.io/github/actions/workflow/status/munich-quantum-toolkit/legacy-core/ci.yml?branch=main&style=flat-square&logo=github&label=ci)](https://github.com/munich-quantum-toolkit/legacy-core/actions/workflows/ci.yml?query=branch%3Amain)
 [![CD](https://img.shields.io/github/actions/workflow/status/munich-quantum-toolkit/legacy-core/cd.yml?style=flat-square&logo=github&label=cd)](https://github.com/munich-quantum-toolkit/legacy-core/actions/workflows/cd.yml)
-[![Documentation](https://img.shields.io/readthedocs/mqt-core?logo=readthedocs&style=flat-square)](https://mqt.readthedocs.io/projects/core)
+[![Documentation](https://img.shields.io/readthedocs/mqt-legacy-core?logo=readthedocs&style=flat-square)](https://mqt.readthedocs.io/projects/legacy-core)
 [![codecov](https://img.shields.io/codecov/c/github/munich-quantum-toolkit/legacy-core/main?style=flat-square&logo=codecov)](https://codecov.io/gh/munich-quantum-toolkit/legacy-core/branch/main)
 
 <p align="center">
@@ -23,7 +23,7 @@ forms the backbone of the quantum software tools developed as part of the
 [_Munich Quantum Toolkit (MQT)_](https://mqt.readthedocs.io).
 
 <p align="center">
-  <a href="https://mqt.readthedocs.io/projects/core">
+  <a href="https://mqt.readthedocs.io/projects/legacy-core">
   <img width=30% src="https://img.shields.io/badge/documentation-blue?style=for-the-badge&logo=read%20the%20docs" alt="Documentation" />
   </a>
 </p>
@@ -75,7 +75,7 @@ To support this endeavor, please consider:
   requests
 - Citing the MQT in your publications (see [Cite This](#cite-this))
 - Citing our research in your publications (see
-  [References](https://mqt.readthedocs.io/projects/core/en/stable/references.html))
+  [References](https://mqt.readthedocs.io/projects/legacy-core/en/stable/references.html))
 - Using the MQT in research and teaching, and sharing feedback and use cases
 - Sponsoring us on GitHub: <https://github.com/sponsors/munich-quantum-toolkit>
 
@@ -107,13 +107,13 @@ print(qc)
 ```
 
 **Detailed documentation and examples are available at
-[ReadTheDocs](https://mqt.readthedocs.io/projects/core).**
+[ReadTheDocs](https://mqt.readthedocs.io/projects/legacy-core).**
 
 ## System Requirements
 
 Building the project requires a C++ compiler with support for C++20 and CMake
 3.24 or newer. For details on how to build the project, please refer to the
-[documentation](https://mqt.readthedocs.io/projects/core). Building (and
+[documentation](https://mqt.readthedocs.io/projects/legacy-core). Building (and
 running) is continuously tested under Linux, macOS, and Windows using the
 [latest available system versions for GitHub Actions](https://github.com/actions/runner-images).
 MQT Core is compatible with all

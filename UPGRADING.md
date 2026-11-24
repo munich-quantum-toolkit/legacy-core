@@ -337,7 +337,7 @@ reconstruction is available.
 `backend.run(memory=True)` preserves shot order. Results include classical
 register boundaries; failed jobs and invalid results raise on collection, and
 unsupported execution options are rejected. See the
-[backend requirements](https://mqt.readthedocs.io/projects/core/en/stable/qdmi/qdmi_backend.html#backend-requirements).
+[backend requirements](https://mqt.readthedocs.io/projects/legacy-core/en/stable/qdmi/qdmi_backend.html#backend-requirements).
 
 ### Private `nlohmann_json` dependency
 
@@ -960,7 +960,7 @@ access to QDMI devices.
 Install with Qiskit support: `uv pip install "mqt-core[qiskit]"`
 
 See the
-[Qiskit Backend documentation](https://mqt.readthedocs.io/projects/core/en/stable/qdmi/qdmi_backend.html)
+[Qiskit Backend documentation](https://mqt.readthedocs.io/projects/legacy-core/en/stable/qdmi/qdmi_backend.html)
 for details.
 
 ### Argument name changes in `QuantumComputation` and `CompoundOperation` dunder methods

@@ -64,7 +64,7 @@ def cpp_lint(session: nox.Session) -> None:
     all_files = session.posargs == ["--all"]
     if not all_files and (len(session.posargs) > 1 or (session.posargs and session.posargs[0].startswith("-"))):
         session.error("pass --all or at most one diff base")
-    diff_base = session.posargs[0] if session.posargs else "origin/v3.x"
+    diff_base = session.posargs[0] if session.posargs else "origin/main"
 
     if shutil.which("cmake") is None:
         session.install("cmake")
