@@ -187,7 +187,7 @@ set(MQT_CORE_REPO_OWNER "munich-quantum-toolkit"
 # cmake-format: on
 FetchContent_Declare(
   mqt-core
-  GIT_REPOSITORY https://github.com/${MQT_CORE_REPO_OWNER}/core.git
+  GIT_REPOSITORY https://github.com/${MQT_CORE_REPO_OWNER}/legacy-core.git
   GIT_TAG ${MQT_CORE_REV}
   FIND_PACKAGE_ARGS ${MQT_CORE_MINIMUM_VERSION})
 list(APPEND FETCH_PACKAGES mqt-core)
@@ -206,7 +206,7 @@ working with multiple branches or versions of the library. First, add the
 submodule to your project (e.g., in the {code}`external` directory):
 
 ```console
-git submodule add https://github.com/munich-quantum-toolkit/core.git external/mqt-core
+git submodule add https://github.com/munich-quantum-toolkit/legacy-core.git external/mqt-core
 ```
 
 Then add the following line to your {code}`CMakeLists.txt` to make the library's
@@ -223,7 +223,7 @@ add_subdirectory(external/mqt-core)
 You can install MQT Core on your system after building it from source:
 
 ```console
-git clone https://github.com/munich-quantum-toolkit/core.git mqt-core
+git clone https://github.com/munich-quantum-toolkit/legacy-core.git mqt-core
 cd mqt-core
 cmake -S . -B build
 cmake --build build
@@ -256,13 +256,13 @@ guidelines and workflows, see {doc}`contributing`.
    :::{tab-item} External Contribution
 
    If you do not have write access to the
-   [munich-quantum-toolkit/core](https://github.com/munich-quantum-toolkit/core)
+   [munich-quantum-toolkit/legacy-core](https://github.com/munich-quantum-toolkit/legacy-core)
    repository, fork the repository on GitHub (see
    <https://docs.github.com/en/get-started/quickstart/fork-a-repo>) and clone
    your fork locally.
 
    ```console
-   git clone git@github.com:your_name_here/core.git mqt-core
+   git clone git@github.com:your_name_here/legacy-core.git mqt-core
    ```
 
    :::
@@ -270,11 +270,11 @@ guidelines and workflows, see {doc}`contributing`.
    :::{tab-item} Internal Contribution
 
    If you have write access to the
-   [munich-quantum-toolkit/core](https://github.com/munich-quantum-toolkit/core)
+   [munich-quantum-toolkit/legacy-core](https://github.com/munich-quantum-toolkit/legacy-core)
    repository, clone the repository locally.
 
    ```console
-   git clone git@github.com/munich-quantum-toolkit/core.git mqt-core
+   git clone git@github.com:munich-quantum-toolkit/legacy-core.git mqt-core
    ```
 
    :::

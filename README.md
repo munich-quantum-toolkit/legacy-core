@@ -2,10 +2,16 @@
 ![OS](https://img.shields.io/badge/os-linux%20%7C%20macos%20%7C%20windows-blue?style=flat-square)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![DOI](https://img.shields.io/badge/JOSS-10.21105/joss.07478-blue.svg?style=flat-square)](https://doi.org/10.21105/joss.07478)
-[![CI](https://img.shields.io/github/actions/workflow/status/munich-quantum-toolkit/core/ci.yml?branch=v3.x&style=flat-square&logo=github&label=ci)](https://github.com/munich-quantum-toolkit/core/actions/workflows/ci.yml?query=branch%3Av3.x)
-[![CD](https://img.shields.io/github/actions/workflow/status/munich-quantum-toolkit/core/cd.yml?style=flat-square&logo=github&label=cd)](https://github.com/munich-quantum-toolkit/core/actions/workflows/cd.yml)
-[![Documentation](https://img.shields.io/readthedocs/mqt-core?logo=readthedocs&style=flat-square)](https://mqt.readthedocs.io/projects/core)
-[![codecov](https://img.shields.io/codecov/c/github/munich-quantum-toolkit/core/v3.x?style=flat-square&logo=codecov)](https://codecov.io/gh/munich-quantum-toolkit/core/branch/v3.x)
+[![CI](https://img.shields.io/github/actions/workflow/status/munich-quantum-toolkit/legacy-core/ci.yml?branch=main&style=flat-square&logo=github&label=ci)](https://github.com/munich-quantum-toolkit/legacy-core/actions/workflows/ci.yml?query=branch%3Amain)
+[![CD](https://img.shields.io/github/actions/workflow/status/munich-quantum-toolkit/legacy-core/cd.yml?style=flat-square&logo=github&label=cd)](https://github.com/munich-quantum-toolkit/legacy-core/actions/workflows/cd.yml)
+[![Documentation](https://img.shields.io/readthedocs/mqt-legacy-core?logo=readthedocs&style=flat-square)](https://mqt.readthedocs.io/projects/legacy-core)
+[![codecov](https://img.shields.io/codecov/c/github/munich-quantum-toolkit/legacy-core/main?style=flat-square&logo=codecov)](https://codecov.io/gh/munich-quantum-toolkit/legacy-core/branch/main)
+
+> [!IMPORTANT]
+> This repository maintains the MQT Core v3.x series, which provides the legacy
+> quantum intermediate representation and decision diagram libraries. For MQT
+> Core v4 and later, see the
+> [main MQT Core repository](https://github.com/munich-quantum-toolkit/core).
 
 <p align="center">
   <a href="https://mqt.readthedocs.io">
@@ -23,7 +29,7 @@ forms the backbone of the quantum software tools developed as part of the
 [_Munich Quantum Toolkit (MQT)_](https://mqt.readthedocs.io).
 
 <p align="center">
-  <a href="https://mqt.readthedocs.io/projects/core">
+  <a href="https://mqt.readthedocs.io/projects/legacy-core">
   <img width=30% src="https://img.shields.io/badge/documentation-blue?style=for-the-badge&logo=read%20the%20docs" alt="Documentation" />
   </a>
 </p>
@@ -34,9 +40,9 @@ forms the backbone of the quantum software tools developed as part of the
 - A state-of-the-art decision diagram (DD) package for quantum computing.
 
 If you have any questions, feel free to create a
-[discussion](https://github.com/munich-quantum-toolkit/core/discussions) or an
-[issue](https://github.com/munich-quantum-toolkit/core/issues) on
-[GitHub](https://github.com/munich-quantum-toolkit/core).
+[discussion](https://github.com/munich-quantum-toolkit/legacy-core/discussions)
+or an [issue](https://github.com/munich-quantum-toolkit/legacy-core/issues) on
+[GitHub](https://github.com/munich-quantum-toolkit/legacy-core).
 
 ## Contributors and Supporters
 
@@ -58,8 +64,8 @@ ecosystem, which is being developed as part of the
 Thank you to all the contributors who have helped make MQT Core a reality!
 
 <p align="center">
-  <a href="https://github.com/munich-quantum-toolkit/core/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=munich-quantum-toolkit/core" alt="Contributors to munich-quantum-toolkit/core" />
+  <a href="https://github.com/munich-quantum-toolkit/legacy-core/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=munich-quantum-toolkit/legacy-core" alt="Contributors to munich-quantum-toolkit/legacy-core" />
   </a>
 </p>
 
@@ -75,7 +81,7 @@ To support this endeavor, please consider:
   requests
 - Citing the MQT in your publications (see [Cite This](#cite-this))
 - Citing our research in your publications (see
-  [References](https://mqt.readthedocs.io/projects/core/en/stable/references.html))
+  [References](https://mqt.readthedocs.io/projects/legacy-core/en/stable/references.html))
 - Using the MQT in research and teaching, and sharing feedback and use cases
 - Sponsoring us on GitHub: <https://github.com/sponsors/munich-quantum-toolkit>
 
@@ -90,7 +96,7 @@ To support this endeavor, please consider:
 `mqt.core` is available via [PyPI](https://pypi.org/project/mqt.core/).
 
 ```console
-uv pip install mqt.core
+uv pip install "mqt.core>=3,<4"
 ```
 
 The following code gives an example on the usage:
@@ -107,13 +113,13 @@ print(qc)
 ```
 
 **Detailed documentation and examples are available at
-[ReadTheDocs](https://mqt.readthedocs.io/projects/core).**
+[ReadTheDocs](https://mqt.readthedocs.io/projects/legacy-core).**
 
 ## System Requirements
 
 Building the project requires a C++ compiler with support for C++20 and CMake
 3.24 or newer. For details on how to build the project, please refer to the
-[documentation](https://mqt.readthedocs.io/projects/core). Building (and
+[documentation](https://mqt.readthedocs.io/projects/legacy-core). Building (and
 running) is continuously tested under Linux, macOS, and Windows using the
 [latest available system versions for GitHub Actions](https://github.com/actions/runner-images).
 MQT Core is compatible with all
