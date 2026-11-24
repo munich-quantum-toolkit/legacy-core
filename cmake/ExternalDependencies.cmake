@@ -20,8 +20,10 @@ if(BUILD_MQT_CORE_BINDINGS)
   find_package(nanobind CONFIG REQUIRED)
 endif()
 
-set(JSON_VERSION 3.12.0 CACHE STRING "nlohmann_json version")
-set(JSON_URL https://github.com/nlohmann/json/releases/download/v${JSON_VERSION}/json.tar.xz)
+# renovate: datasource=github-releases depName=nlohmann/json
+set(JSON_TAG v3.12.0)
+string(REGEX REPLACE "^v" "" JSON_VERSION "${JSON_TAG}")
+set(JSON_URL https://github.com/nlohmann/json/releases/download/${JSON_TAG}/json.tar.xz)
 set(JSON_SystemInclude ON CACHE INTERNAL "Treat the library headers like system headers")
 fetchcontent_declare(nlohmann_json URL ${JSON_URL} FIND_PACKAGE_ARGS ${JSON_VERSION})
 list(APPEND FETCH_PACKAGES nlohmann_json)
@@ -31,15 +33,20 @@ if(BUILD_MQT_CORE_TESTS)
   # Disable the install instructions for GTest, as we do not need them.
   set(INSTALL_GTEST OFF CACHE BOOL "" FORCE)
   set(GTEST_VERSION 1.17.0 CACHE STRING "Google Test version")
-  set(GTEST_URL https://github.com/google/googletest/archive/refs/tags/v${GTEST_VERSION}.tar.gz)
+  # renovate: datasource=github-tags depName=google/googletest
+  set(GTEST_REV
+      "52eb8108c5bdec04579160ae17225d66034bd723" # tag=v1.17.0
+      CACHE STRING "Google Test identifier (tag, branch or commit hash)")
+  set(GTEST_URL https://github.com/google/googletest/archive/${GTEST_REV}.tar.gz)
   fetchcontent_declare(googletest URL ${GTEST_URL} FIND_PACKAGE_ARGS ${GTEST_VERSION} NAMES GTest)
   list(APPEND FETCH_PACKAGES googletest)
 endif()
 
 set(QDMI_MINIMUM_VERSION 1.4.0 CACHE STRING "Minimum QDMI version")
 set(QDMI_VERSION 1.4.0 CACHE STRING "QDMI version")
+# renovate: datasource=github-tags depName=Munich-Quantum-Software-Stack/QDMI
 set(QDMI_REV
-    "6db03d83ad602aaa9fe928b5c3fc5cce84b10061" # v1.4.0
+    "6db03d83ad602aaa9fe928b5c3fc5cce84b10061" # tag=v1.4.0
     CACHE STRING "QDMI identifier (tag, branch or commit hash)")
 set(QDMI_REPO_OWNER "Munich-Quantum-Software-Stack"
     CACHE STRING "QDMI repository owner (change when using a fork)")
