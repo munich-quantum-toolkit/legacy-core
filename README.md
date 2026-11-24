@@ -7,6 +7,12 @@
 [![Documentation](https://img.shields.io/readthedocs/mqt-legacy-core?logo=readthedocs&style=flat-square)](https://mqt.readthedocs.io/projects/legacy-core)
 [![codecov](https://img.shields.io/codecov/c/github/munich-quantum-toolkit/legacy-core/main?style=flat-square&logo=codecov)](https://codecov.io/gh/munich-quantum-toolkit/legacy-core/branch/main)
 
+> [!IMPORTANT]
+> This repository maintains the MQT Core v3.x series, which provides the legacy
+> quantum intermediate representation and decision diagram libraries. For MQT
+> Core v4 and later, see the
+> [main MQT Core repository](https://github.com/munich-quantum-toolkit/core).
+
 <p align="center">
   <a href="https://mqt.readthedocs.io">
     <picture>
@@ -90,7 +96,7 @@ To support this endeavor, please consider:
 `mqt.core` is available via [PyPI](https://pypi.org/project/mqt.core/).
 
 ```console
-uv pip install mqt.core
+uv pip install "mqt.core>=3,<4"
 ```
 
 The following code gives an example on the usage:
