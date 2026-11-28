@@ -35,7 +35,7 @@ if(BUILD_MQT_CORE_TESTS)
   set(GTEST_VERSION 1.17.0 CACHE STRING "Google Test version")
   # renovate: datasource=github-tags depName=google/googletest
   set(GTEST_REV
-      "52eb8108c5bdec04579160ae17225d66034bd723" # tag=v1.17.0
+      "063de7e9578f82b369302001269680b4b1553359" # tag=v1.18.0
       CACHE STRING "Google Test identifier (tag, branch or commit hash)")
   set(GTEST_URL https://github.com/google/googletest/archive/${GTEST_REV}.tar.gz)
   fetchcontent_declare(googletest URL ${GTEST_URL} FIND_PACKAGE_ARGS ${GTEST_VERSION} NAMES GTest)
